@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const absenceController = require("../controllers/absence");
 const auth = require("../controllers/auth");
-
 router.get(
   "/",
   auth.loggedMiddleware,
